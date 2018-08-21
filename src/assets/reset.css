@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+布局框架:#h(头部)、#b(内容)、#f(尾部)
+		然后用行(r)列(c)进行划分区域
+		区域划分好后分模块(m)
+		模块里面也分.h(头部)、.b(内容)、.f(尾部)
+		元件(.u-)、功能(.f-)、皮肤(.s-)、状态(.z-)、交互(.j-)
+时间更新:2015-05-20
+*/
+/*--------------------reset--------------------*/
+html{line-height:normal;}
+body{color:#000; font-size:1em; line-height:1.2; font-family: Arial,'Microsoft YaHei','STHeiti',sans-serif;}
+body,form,input,ul,dl,dd,p,h1,h2,h3,h4,h5,h6,textarea,pre,fieldset{margin:0;}
+ul,input,fieldset,legend{padding:0;}
+button,
+input[type="submit"],
+input[type="file"]{cursor:pointer;}
+input{outline:none;}
+ul{list-style:none; list-style-position:outside;}
+ul li{float:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+h1,h2,h3,h4,h5,h6,input,button,textarea,select{font-size:inherit; line-height:inherit; font-weight:normal;}
+input,button,textarea,label{display:inline-block; vertical-align:middle;}
+table{border-collapse:collapse; border-spacing:0; background:none;}
+a{color:#000; text-decoration:none; outline:0;}
+a:hover{color:#bd1515;}
+a img{border:none;}
+img,video{max-width:100%;}
+a,button{cursor:pointer;} 
+i{font-style:normal;}
+b{font-weight:normal;}
+textarea{overflow:auto; resize:none;}
+html{-webkit-font-smoothing: subpixel-antialiased; -webkit-tap-highlight-color:transparent;}
+button,input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="tel"],
+input[type="password"],
+textarea{-webkit-appearance:none; box-sizing:border-box;}
+button,
+input[type="submit"],
+input[type="button"],
+input[type="tel"]{cursor:pointer;}
+textarea{min-height:100px;}
+input{border:0 none; outline:0 none; box-shadow:none;}
+label{font-weight:normal;}
+input{max-width:none;}
+/*--------------------功能(.f-)--------------------*/
+.f-cb:before,.f-cb:after{content:''; display:table;}.f-cb:after{clear:both;}
+.f-tal{text-align:left;}.f-tac{text-align:center;}.f-tar{text-align:right;}
+.f-fl{float:left;}.f-fr{float:right;}
+.f-toe{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.f-wbk{word-wrap:break-word; word-break:break-all;}
+.ul-jus{text-align:justify;width:100%;margin:0 auto;}
+.ul-jus:after{content:"";display:inline-block;vertical-align:middle;width:100%;}
+.ul-jus li {display:inline-block;vertical-align:middle; float:none;}
+.ver-wrap{position:relative;}
+.ver-middle{position:absolute;width:100%;height:100%;color:#fff;top:0;left:0;text-align:center;}
+.ver-middle:after{content:"";height:100%;vertical-align:middle;display:inline-block;}
+.ver-middle span{vertical-align:middle;display:inline-block;text-align:center;}
+.distable{display:table;}
+.distable-cell{display:table-cell;}
+.clearfix:before,.clearfix:after{content:" ";display:table}
+.clearfix:after{clear:both}
+
